@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>cbvapp Base file</title>
+  </head>
+  <body>
+    <nav class="nvclsname">
+      <li><a href="{% url 'cbvApp:list' %}">Schools</a></li>
+      <li><a href="{% url 'admin:index' %}">Admin</a></li>
+      <li></li>
+    </nav>
+    <div class="container">
+      {% block body_block %}
+
+      {% endblock %}
+    </div>
+  </body>
+</html>
